@@ -1,0 +1,188 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Taiwan) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+#pragma code_page(950)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)\r\n"
+    "LANGUAGE 4, 1\r\n"
+    "#pragma code_page(950)\r\n"
+    "#include ""res\\PacketSR.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\PacketSR.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PACKETSR_DIALOG DIALOGEX 0, 0, 169, 259
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "PacketSR"
+FONT 10, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Start",ID_START,7,144,50,16
+    PUSHBUTTON      "Stop",ID_STOP,87,143,50,16
+    RTEXT           "Sended Packet Number :",IDC_STA_SENDPACKET_N,7,187,78,8
+    GROUPBOX        "Preference :",IDC_STATIC_1,4,4,162,58
+    LTEXT           "0",IDC_STA_SENDPACKET_N2,93,188,72,8
+    CONTROL         "Broadcast Packet",IDC_RADIO_BROADCAST,"Button",BS_AUTORADIOBUTTON,7,122,71,10
+    CONTROL         "Unicast Packet",IDC_RADIO_UNICAST,"Button",BS_AUTORADIOBUTTON,87,123,63,10
+    CONTROL         "",IDC_IPADDRESS_TO,"SysIPAddress32",WS_TABSTOP,54,99,104,11
+    COMBOBOX        IDC_COMBO1,54,11,68,50,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "NIC :",IDC_STATIC_NIC,7,12,38,10
+    LTEXT           "Remote IP : ",IDC_STATIC_TARGET_IP,7,99,38,9
+    LTEXT           "Port : ",IDC_STATIC_PORT,7,29,38,9
+    EDITTEXT        IDC_EDIT_PORT,54,29,68,11,ES_AUTOHSCROLL
+    CONTROL         "Send Packet",IDC_RADIO_SEND_PACKET,"Button",BS_AUTORADIOBUTTON,7,44,55,10
+    CONTROL         "Receive Packet",IDC_RADIO_RECV_PACKET,"Button",BS_AUTORADIOBUTTON,87,45,55,10
+    GROUPBOX        "Result :",IDC_STATIC,4,168,163,86
+    RTEXT           "Received Packet Number :",IDC_STA_RECEIVE_PACKET,7,205,83,8
+    LTEXT           "0",IDC_STA_RECEIVE_PACKET_N2,93,205,70,8
+    RTEXT           "Average Received :",IDC_STA_AVG_RECEIVE_PACKET,7,220,61,8
+    LTEXT           "packets / s ",IDC_STA_AVG_RECEIVE_PACKET_UNIT,114,220,34,8
+    RTEXT           "0",IDC_STA_AVG_RECEIVE_PACKET_NUMBER,69,220,41,8
+    GROUPBOX        "Packet Type : ",IDC_STATIC,4,66,162,99
+    LTEXT           "Packet Size : ",IDC_STA_PACKET_SIZE,7,83,43,10
+    EDITTEXT        IDC_EDIT_PACKET_SIZE,54,83,68,12,ES_AUTOHSCROLL
+    LTEXT           "kB/s ",IDC_STA_AVG_RECEIVE_KB,114,235,34,8
+    RTEXT           "0",IDC_STA_AVG_RECEIVE_KB_NUMBER,68,235,41,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "PacketSR.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "PacketSR.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_PACKETSR_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 163
+        BOTTOMMARGIN, 253
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (Taiwan) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+LANGUAGE 4, 1
+#pragma code_page(950)
+#include "res\PacketSR.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
